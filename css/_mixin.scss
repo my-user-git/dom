@@ -1,0 +1,16 @@
+@mixin button {
+    transition: background-color ease-in-out .5s;
+
+    &:hover {
+        background-color: var(--orange-32);
+    }
+
+    &:focus {
+        background-color: var(--orange-00);
+    }
+
+    &:active {
+        background-color: var(--grey2);
+        ;
+    }
+}

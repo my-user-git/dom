@@ -5,15 +5,19 @@
   --font-family: Arial, sans-serif;
   --inter-regular: "InterRegular";
   --montserrat: "MontserratBold";
+  --third-family: "Kollektif";
   /* color */
   --white: #FFFFFF;
   --black: #000000;
   --grey2: #c0c0c0;
   --dark-grey: #2d2d2d;
   --orange-juice: #f60;
+  --orange-32: #ff9832;
+  --orange-00: #cd3400;
   --light-grey: #f6f6f6;
   --grey: #808080;
   --grey-DB: #dbdbdb;
+  --grey-3F: #3f3f3f;
 }
 
 @font-face {
@@ -37,6 +41,12 @@
 @font-face {
   font-family: "MontserratBold";
   src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("../fonts/Kollektif.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -137,9 +147,16 @@ input {
   font-weight: 400;
   font-size: 24px;
   color: var(--white);
+  transition: color ease-in-out 0.5s;
 }
 .header__link:hover {
   color: var(--grey2);
+}
+.header__link:focus {
+  color: var(--orange-juice);
+}
+.header__link:active {
+  color: var(--grey-3F);
 }
 .header__item-x {
   display: none;
@@ -229,6 +246,16 @@ input {
   color: var(--white);
   border-radius: 20px;
   background-color: var(--orange-juice);
+  transition: background-color ease-in-out 0.5s;
+}
+.section-hero__btn:hover {
+  background-color: var(--orange-32);
+}
+.section-hero__btn:focus {
+  background-color: var(--orange-00);
+}
+.section-hero__btn:active {
+  background-color: var(--grey2);
 }
 .section-hero__picture {
   grid-area: picture;
@@ -301,9 +328,17 @@ input {
   cursor: pointer;
   transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s;
 }
-.section-tabs__btn_active {
+.section-tabs__btn:hover {
   color: var(--white);
-  background-color: var(--orange-juice);
+  background-color: var(--orange-32);
+}
+.section-tabs__btn:focus {
+  color: var(--white);
+  background-color: var(--orange-00);
+}
+.section-tabs__btn:active {
+  color: var(--white);
+  background-color: var(--grey2);
 }
 .section-tabs__h2 {
   margin-bottom: 40px;
@@ -486,17 +521,26 @@ input {
   transform: rotate(45deg);
 }
 .section-price__rate-btn {
-  justify-self: flex-end;
   width: 100%;
   margin-top: auto;
   padding: 23px 10px 20px 10px;
-  font-family: var(--third-family);
+  font-family: var(--third-family), var(--font-family);
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
   color: var(--white);
   border-radius: 20px;
   background-color: var(--orange-juice);
+  transition: background-color ease-in-out 0.5s;
+}
+.section-price__rate-btn:hover {
+  background-color: var(--orange-32);
+}
+.section-price__rate-btn:focus {
+  background-color: var(--orange-00);
+}
+.section-price__rate-btn:active {
+  background-color: var(--grey2);
 }
 .section-price__add {
   display: grid;
@@ -564,6 +608,16 @@ input {
   color: var(--white);
   border-radius: 20px;
   background-color: var(--orange-juice);
+  transition: background-color ease-in-out 0.5s;
+}
+.section-price__add-btn:hover {
+  background-color: var(--orange-32);
+}
+.section-price__add-btn:focus {
+  background-color: var(--orange-00);
+}
+.section-price__add-btn:active {
+  background-color: var(--grey2);
 }
 
 /* section-clients */
@@ -752,13 +806,23 @@ input {
 .section-registration__btn {
   grid-area: 2/1/3/1;
   padding: 22px 10px;
-  font-family: var(--third-family);
+  font-family: var(--third-family), var(--font-family);
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
   color: var(--white);
   border-radius: 20px;
   background-color: var(--orange-juice);
+  transition: background-color ease-in-out 0.5s;
+}
+.section-registration__btn:hover {
+  background-color: var(--orange-32);
+}
+.section-registration__btn:focus {
+  background-color: var(--orange-00);
+}
+.section-registration__btn:active {
+  background-color: var(--grey2);
 }
 .section-registration__picture {
   grid-area: 1/2/3/2;
@@ -1106,6 +1170,16 @@ input {
   color: var(--white);
   border-radius: 20px;
   background-color: var(--orange-juice);
+  transition: background-color ease-in-out 0.5s;
+}
+.section-generation__btn:hover {
+  background-color: var(--orange-32);
+}
+.section-generation__btn:focus {
+  background-color: var(--orange-00);
+}
+.section-generation__btn:active {
+  background-color: var(--grey2);
 }
 .section-generation__more {
   grid-area: more;
